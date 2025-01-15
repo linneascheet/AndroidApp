@@ -7,8 +7,7 @@
         android:id="@+id/splashImage"
         android:layout_width="500dp"
         android:layout_height="400dp"
-        android:scaleType="centerCrop"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/capp" />
 </RelativeLayout>

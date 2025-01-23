@@ -1,66 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center">
 
-
+    <!-- Continue Button -->
     <Button
-        android:id="@+id/Voice1"
+        android:id="@+id/btnContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Voice1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="245dp">
-
-    </Button>
-
-    <Button
-        android:id="@+id/Voice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voice2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="293dp">
-
-    </Button>
-
-    <Button
-        android:id="@+id/Voice3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voice3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="341dp">
-
-    </Button>
-
-    <Button
-        android:id="@+id/Voice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voice4"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="392dp">
-
-    </Button>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+        android:text="Continue" />
+</LinearLayout>

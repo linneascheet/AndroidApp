@@ -9,28 +9,25 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnVoice1, btnVoice2, btnVoice3, btnVoice4;
+
+//    Button btnVoice1, btnVoice2, btnVoice3, btnVoice4;
+private Button btnContinue;
     MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnContinue = findViewById(R.id.btnContinue);
 
-        btnVoice1 = findViewById(R.id.Voice1);
-        btnVoice2 = findViewById(R.id.Voice2);
-        btnVoice3 = findViewById(R.id.Voice3);
-        btnVoice4 = findViewById(R.id.Voice4);
-
-        btnVoice1.setOnClickListener(v -> playAudio(R.raw.test));
+        // Set an OnClickListener to handle the navigation
+        btnContinue.setOnClickListener(v -> {
+            // Navigate to SecondActivity when Continue is clicked
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            startActivity(intent);
+        });
     }
 
-    private void playAudio(int audioResId) {
-        if (player == null) {
-            player = MediaPlayer.create(MainActivity.this, audioResId);
-        }
-        player.start();
-    }
 
     @Override
     protected void onDestroy() {

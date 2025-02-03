@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
 
         // Set up onClickListeners for each button
         btnVoice1.setOnClickListener(v -> playAudio(R.raw.sound1));
-        btnVoice2.setOnClickListener(v -> playAudio(R.raw.sound1));
+        btnVoice2.setOnClickListener(v -> playAudio(R.raw.sound2));
         btnVoice3.setOnClickListener(v -> playAudio(R.raw.sound1));
         btnVoice4.setOnClickListener(v -> playAudio(R.raw.sound1));
     }
